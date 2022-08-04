@@ -1,7 +1,12 @@
 import React from "react";
+import Navbar from "../components/Navbar/Navbar";
 
 const founder = () => {
-  return <div>founder</div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 };
 
 export default founder;

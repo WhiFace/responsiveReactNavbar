@@ -1,13 +1,13 @@
 export const MenuItems = [
   {
     title: "Founder",
-    path: "/pages/founder.js",
+    href: "/founder",
     cName: "dropdown_link",
   },
 
   {
     title: "Kerith Church",
-    path: "/pages/kerithchurch.js",
+    href: "/kerithchurch",
     cName: "dropdown_link",
   },
 ];

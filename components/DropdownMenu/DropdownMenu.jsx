@@ -17,7 +17,7 @@ const DropdownMenu = () => {
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
-              <Link href={item.path}>
+              <Link href={item.href}>
                 <a className={item.cName} onClick={() => setClick(false)}>
                   {item.title}
                 </a>

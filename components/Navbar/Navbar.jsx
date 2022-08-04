@@ -18,6 +18,20 @@ const Navbar = () => {
     setClick(false);
   };
 
+  const onMouseDown = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(true);
+    }
+  };
+
+  // const onMouseUp = () => {
+  //   if (window.innerWidth < 960) {
+  //     setDropdown(true);
+  //   } else {
+  //     setDropdown(true);
+  //   }
+  // };
+
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -63,8 +77,10 @@ const Navbar = () => {
             className="nav__menu_item"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            onMouseDown={onMouseDown}
+            // onMouseUp={onMouseUp}
           >
-            <Link href="/kerith">
+            <Link href="">
               <a className="nav__menu_links" onClick={closeMobileMenu}>
                 {" "}
                 Kerith
@@ -84,16 +100,8 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li className="nav__menu_item">
-            <Link href="https://www.stripe.com">
-              <a className="nav__menu_links" onClick={closeMobileMenu}>
-                {" "}
-                Donate{" "}
-              </a>
-            </Link>
-          </li>
+          <Button className="btn" />
         </ul>
-        <Button />
       </nav>
     </>
   );
